@@ -25,10 +25,17 @@ public class Kapitel3{
 		double product = minutes * costD;
 		JOptionPane.showMessageDialog(null, "Det kostar ungef" + a2 + "r " + product + " kr per m" + a1 + "nad.");*/
 		//SFP = String FullPrice
-		String SFP = JOptionPane.showInputDialog(null, "Hur mycket kostar produkten inklusive moms?");
+		/*String SFP = JOptionPane.showInputDialog(null, "Hur mycket kostar produkten inklusive moms?");
 		int DFP = Integer.parseInt(SFP);
 		int moms = DFP/5;
 		int Realcost = moms * 4;
-		JOptionPane.showMessageDialog(null, "Pris exklusive moms: " + Realcost + "\nMoms: " + moms);
+		JOptionPane.showMessageDialog(null, "Pris exklusive moms: " + Realcost + "\nMoms: " + moms);*/
+		int mins, secs, hours, tid;
+		String tidS = JOptionPane.showInputDialog(null, "Hur m" + a1 + "nga sekunder tog det?");
+		tid = Integer.parseInt(tidS);
+		hours = tid / 3600;
+		mins = (tid-hours*3600)/60;
+		secs = (tid-hours*3600-mins*60);
+		JOptionPane.showMessageDialog(null, "Timmar: " + hours + "\nMinuter: " + mins + "\nSekunder: " + secs);
 	}
 }
