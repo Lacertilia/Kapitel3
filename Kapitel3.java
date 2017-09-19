@@ -18,11 +18,17 @@ public class Kapitel3{
 		double O = pi * 2 * ra;
 		double A = pi * ra * ra;
 		JOptionPane.showMessageDialog(null, "Omkretsen p" + a1 + " den cirkeln " + a2 + "r " + O + "\nArean p" + a1 + " cirkeln " + a2 + "r " + A + ".");*/
-		String min = JOptionPane.showInputDialog(null, "Ungef" + a2 + "r hur m" + a1 + "nga minuter ringer du per m" + a1 + "nad?");
+		/*String min = JOptionPane.showInputDialog(null, "Ungef" + a2 + "r hur m" + a1 + "nga minuter ringer du per m" + a1 + "nad?");
 		String costS = JOptionPane.showInputDialog(null, "Hur mycket kostar det f" + o1 + "r dig att ringa minutvis?");
 		double minutes = Double.parseDouble(min);
 		double costD = Double.parseDouble(costS);
 		double product = minutes * costD;
-		JOptionPane.showMessageDialog(null, "Det kostar ungef" + a2 + "r " + product + " kr per m" + a1 + "nad.");
+		JOptionPane.showMessageDialog(null, "Det kostar ungef" + a2 + "r " + product + " kr per m" + a1 + "nad.");*/
+		//SFP = String FullPrice
+		String SFP = JOptionPane.showInputDialog(null, "Hur mycket kostar produkten inklusive moms?");
+		int DFP = Integer.parseInt(SFP);
+		int moms = DFP/5;
+		int Realcost = moms * 4;
+		JOptionPane.showMessageDialog(null, "Pris exklusive moms: " + Realcost + "\nMoms: " + moms);
 	}
 }
