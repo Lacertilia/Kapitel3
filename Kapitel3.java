@@ -6,9 +6,9 @@ Rasmus Mattas
 */
 public class Kapitel3{
 	public static void main(String[] args) {
-		char a1 = '\u00E5';
-		char a2 = '\u00E4';
-		char o1 = '\u00F6';
+		char a1 = '\u00E5'; //å
+		char a2 = '\u00E4'; //ä
+		char o1 = '\u00F6'; //ö
 		/*int i = 500.7;
 		byte b = 500.7;
 		double d = 500.7;
@@ -30,12 +30,33 @@ public class Kapitel3{
 		int moms = DFP/5;
 		int Realcost = moms * 4;
 		JOptionPane.showMessageDialog(null, "Pris exklusive moms: " + Realcost + "\nMoms: " + moms);*/
-		int mins, secs, hours, tid;
+		/*nt mins, secs, hours, tid;
 		String tidS = JOptionPane.showInputDialog(null, "Hur m" + a1 + "nga sekunder tog det?");
 		tid = Integer.parseInt(tidS);
 		hours = tid / 3600;
 		mins = (tid-hours*3600)/60;
 		secs = (tid-hours*3600-mins*60);
-		JOptionPane.showMessageDialog(null, "Timmar: " + hours + "\nMinuter: " + mins + "\nSekunder: " + secs);
+		JOptionPane.showMessageDialog(null, "Timmar: " + hours + "\nMinuter: " + mins + "\nSekunder: " + secs);*/
+		String d1S = JOptionPane.showInputDialog(null, "V" + a2 + "rme dag 1");
+		String d2S = JOptionPane.showInputDialog(null, "V" + a2 + "rme dag 2");
+		double d1 = Double.parseDouble(d1S);
+		double d2 = Double.parseDouble(d2S);
+		double maxTemp = Math.max(d1, d2);
+		d2S = JOptionPane.showInputDialog(null, "V" + a2 + "rme dag 3");
+		d2 = Double.parseDouble(d2S);
+		maxTemp = Math.max(d2, maxTemp);
+		d2S = JOptionPane.showInputDialog(null, "V" + a2 + "rme dag 4");
+		d2 = Double.parseDouble(d2S);
+		maxTemp = Math.max(d2, maxTemp);
+		d2S = JOptionPane.showInputDialog(null, "V" + a2 + "rme dag 5");
+		d2 = Double.parseDouble(d2S);
+		maxTemp = Math.max(d2, maxTemp);
+		d2S = JOptionPane.showInputDialog(null, "V" + a2 + "rme dag 6");
+		d2 = Double.parseDouble(d2S);
+		maxTemp = Math.max(d2, maxTemp);
+		d2S = JOptionPane.showInputDialog(null, "V" + a2 + "rme dag 7");
+		d2 = Double.parseDouble(d2S);
+		maxTemp = Math.max(d2, maxTemp);
+		JOptionPane.showMessageDialog(null, "Maxtemperaturen var " + maxTemp);
 	}
 }
