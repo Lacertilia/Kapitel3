@@ -37,7 +37,7 @@ public class Kapitel3{
 		mins = (tid-hours*3600)/60;
 		secs = (tid-hours*3600-mins*60);
 		JOptionPane.showMessageDialog(null, "Timmar: " + hours + "\nMinuter: " + mins + "\nSekunder: " + secs);*/
-		String d1S = JOptionPane.showInputDialog(null, "V" + a2 + "rme dag 1");
+		/*String d1S = JOptionPane.showInputDialog(null, "V" + a2 + "rme dag 1");
 		String d2S = JOptionPane.showInputDialog(null, "V" + a2 + "rme dag 2");
 		double d1 = Double.parseDouble(d1S);
 		double d2 = Double.parseDouble(d2S);
@@ -57,6 +57,11 @@ public class Kapitel3{
 		d2S = JOptionPane.showInputDialog(null, "V" + a2 + "rme dag 7");
 		d2 = Double.parseDouble(d2S);
 		maxTemp = Math.max(d2, maxTemp);
-		JOptionPane.showMessageDialog(null, "Maxtemperaturen var " + maxTemp);
+		JOptionPane.showMessageDialog(null, "Maxtemperaturen var " + maxTemp);*/
+		double r = Math.random();
+		double d = r * 100;
+		d = d-(d%1);
+		int random = (int) d;
+		JOptionPane.showMessageDialog(null, "Ditt slumpm" + a2 + "ssiga tal blev: " + random);
 	}
 }
