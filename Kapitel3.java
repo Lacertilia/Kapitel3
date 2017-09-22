@@ -30,7 +30,7 @@ public class Kapitel3{
 		int moms = DFP/5;
 		int Realcost = moms * 4;
 		JOptionPane.showMessageDialog(null, "Pris exklusive moms: " + Realcost + "\nMoms: " + moms);*/
-		/*nt mins, secs, hours, tid;
+		/*int mins, secs, hours, tid;
 		String tidS = JOptionPane.showInputDialog(null, "Hur m" + a1 + "nga sekunder tog det?");
 		tid = Integer.parseInt(tidS);
 		hours = tid / 3600;
